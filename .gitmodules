@@ -1,0 +1,3 @@
+[submodule "go-echo-server"]
+	path = go-echo-server
+	url = git@github.com:shake551/go-echo-server.git
