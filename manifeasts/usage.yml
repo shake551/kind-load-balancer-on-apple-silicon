@@ -8,6 +8,8 @@ spec:
   containers:
   - name: foo-app
     image: shake551/go-echo-server
+    args:
+    - "-text=foo"
 ---
 kind: Pod
 apiVersion: v1
@@ -19,6 +21,8 @@ spec:
   containers:
   - name: bar-app
     image: shake551/go-echo-server
+    args:
+    - "-text=bar"
 ---
 kind: Service
 apiVersion: v1
